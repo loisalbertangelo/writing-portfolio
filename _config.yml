@@ -1,0 +1,14 @@
+title: "Writing Portfolio – Public Health & Aging"
+description: "Selected writing on aging, emergency preparedness, and health equity."
+baseurl: "/writing-portfolio"
+url: "https://loisalbertangelo.github.io"
+
+theme: jekyll-theme-minimal
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+
+markdown: kramdown
+highlighter: rouge
