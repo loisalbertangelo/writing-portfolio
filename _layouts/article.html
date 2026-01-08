@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="article-detail">
+  <h1>{{ page.title }}</h1>
+
+  <div class="article-metadata">
+    <p>
+      <strong>Type:</strong> {{ page.type }} |
+      <strong>Role:</strong> {{ page.role }}
+      {% if page.publication %} | <strong>Publication:</strong> {{ page.publication }}{% endif %}
+      {% if page.publish_date %} | <strong>Date:</strong> {{ page.publish_date }}{% endif %}
+    </p>
+
+    {% if page.topics %}
+    <p>
+      <strong>Topics:</strong>
+      {% for t in page.topics %}
+        <span class="tag">{{ t }}</span>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    {% if page.populations %}
+    <p>
+      <strong>Populations:</strong>
+      {% for p in page.populations %}
+        <span class="tag">{{ p }}</span>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    {% if page.methods %}
+    <p>
+      <strong>Methods:</strong>
+      {% for m in page.methods %}
+        {{ m }}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+
+  <hr>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+  {% if page.url %}
+  <hr>
+  <p class="external-link">
+    <strong>View published piece:</strong>
+    <a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.url }}</a>
+  </p>
+  {% endif %}
+</article>
