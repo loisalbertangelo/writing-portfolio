@@ -1,2 +1,2 @@
 # writing-portfolio
-Public health and aging writing portfolio with structured metadata
+An attempt to migrate my public health and aging writing portfolio into Github using HTML.
