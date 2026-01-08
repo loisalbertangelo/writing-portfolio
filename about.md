@@ -35,7 +35,3 @@ This portfolio collects writing from work in aging services, emergency preparedn
 - Emergency preparedness and disaster response
 - Health equity and vulnerable populations
 - Policy analysis and program evaluation
-
-## Contact
-
-For questions about this work or collaboration opportunities, connect via [GitHub](https://github.com/loisalbertangelo) or [LinkedIn](https://linkedin.com/in/loisalbertangelo).
